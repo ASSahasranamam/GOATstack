@@ -1,0 +1,62 @@
+<!--
+=============================================================
+== This is the entry point for Angular. ===================== 
+=============================================================
+**                                                         **
+** This file gets served to the client by                  **
+** the express server once the client requests             **
+** any route. The location where this file is              **
+** served is in GOATstack/server/express.ts lines 83-86    **
+**                                                         **
+**                                                         **
+=============================================================
+-->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- base href="/" is used for angular2 routing -->
+    <base href="/">
+    <!--  For dynamic SEO within the app refer
+              to the SEOActions in client/main-segment/actions/seo -->
+    <title>GOATstack</title>
+    <link id="favicon" rel="icon" href="public/assets/favicon.png">
+    <meta name="description" content="The Greatest of All Time Stack!">
+    <meta name="keywords" content="redux, immutable, node, mongo, express, angular2, ng2, angular4, ng4, jasmine, karma, protractor, socketio, MEAN, webapp, Web Application">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Google Analytics -->
+    <!-- <script> Place your google analytics code block here </script> -->
+    <!-- 1. Load libraries -->
+
+    <!-- 
+    ===========================================================
+    == GSAP library =========================================== 
+    ===========================================================
+    ** GSAP is a pretty robust javascript animation library. **
+    ** We decided to implement it due to its ease of use     **
+    ** and its multi browser compatibility.                  **
+    **                                                       **
+    ** more about GSAP here: https://greensock.com/          **
+    ===========================================================
+    -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>
+
+</head>
+
+<body>
+    <!-- 
+    ============================================================================================
+    == Angular app =============================================================================
+    ============================================================================================
+    ** The DOM will render everything Angular inside the <my-app> tags.                       **
+    ** <my-app> is defined in the app.component.ts file in this directory.                    **
+    ** We decided to keep this component in the root since it is the bootstrapped component.  **
+    ** app.component.ts is declared in app.module.ts and then bootstrapped in app.ts          **
+    ============================================================================================
+     -->
+    <my-app id="app"></my-app>
+</body>
+
+</html>
